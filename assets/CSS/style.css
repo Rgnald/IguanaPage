@@ -1,0 +1,142 @@
+/* styles.css */
+
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+
+body {
+    background-color: black;
+    color: white; /* Esto hace que el texto sea blanco para que sea visible sobre el fondo negro */
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+/** ENCABEZADO**/
+header{
+    padding: 20px 0; /* Espaciado en el header */
+    text-align: center; /* Centrar el texto dentro del header */
+
+}
+header h1{
+        font-size: 50px ;
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+}
+
+.imagen_iguana{         
+        padding: 10px;
+        top: 73px;
+        left: 0px;
+        width: 1280px;
+        height: 727px;
+}
+
+/**CONTENIDO DE LA PAGINA **/
+.contenido_page{
+    display: flex;                /* Activamos Flexbox */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center;           /* Centra verticalmente los elementos */              
+    padding: 20px;
+}
+
+.contenido_page_hijo{                                          
+    flex: 1;                       /* Cada hijo ocupa el mismo espacio disponible */
+    padding: 20px;  
+    font-size: 16px;
+}
+
+.contenido_page_hijo p{
+    font-size: 16px;
+
+}
+
+.contenido_page_hijo img {
+    width: 100%;                   /* Hace que la imagen ocupe el 100% del espacio disponible */
+    max-width: 400px;              /* Limita el tamaño máximo de la imagen */
+    height: auto;                  /* Mantiene la proporción de la imagen */
+}
+
+/**CARACTERISTICAS**/
+
+.caracteristicas{     /** contenedor grande padre**/
+    text-align: center;
+    padding: 50px 0;
+    background-color: #1E1A13;
+}
+
+.caracteristicas h1{ /** aca centramos solo el h1**/
+    text-align: center;
+    padding: 75px;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    
+
+}
+
+.caracteristicas_sub{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+
+}
+
+.caracteristicas_hijo{ /**se coloac la imagen y el parrafo en columna y centra la imagen **/
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 24px;
+}
+.caracteristicas_hijo p{
+    margin-top: 9px;   /**Espacion arriba del texto**/
+
+}
+.caracteristicas_hijo svg{
+    width: 60px;                   /* Tamaño más grande para los íconos */
+    height: 60px;                  /* Mantener la proporción */
+    color: hsl(0, 0%, 100%);                /* Color verde para los íconos */
+}
+
+.imagenes{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 20px;
+padding: 20px;
+
+}
+
+.imagenes_iguanas{
+ flex: 1 1 30%;
+ max-width: 400px;
+ text-align: center;
+ gap: 1px;
+}
+
+.header-logo{
+    margin: 20%;
+    top: 1561px;
+    left: 150px;
+    width: 316px;
+    height: 202px;
+
+}
+
+/**final de la pagina **/
+
+.footer{
+background:  #1E1A13;
+padding: 20px;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 20px;
+}
